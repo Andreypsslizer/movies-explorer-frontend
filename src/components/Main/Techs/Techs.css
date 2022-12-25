@@ -1,0 +1,135 @@
+.techs{
+    background-color: #F5F5F5;
+}
+
+.techs-page{
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.techs__header{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+.techs__header::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #000;
+    margin-top: 23px;
+}
+
+.techs__block{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techs__block-header{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    margin: 0;
+    padding: 0;
+}
+
+.techs__block-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
+    width: 460px;
+    text-align: center;
+}
+
+.techs__list{
+    list-style-type: none;
+    margin: 100px auto 100px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.techs__item{
+    width: 90px;
+    height: 60px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.techs__description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .techs-page{
+        max-width: 668px;
+        padding-top: 90px;
+    }
+    .techs__block{
+        margin-top: 80px;
+    }
+    .techs__block-text{
+        margin-top: 22px;
+    }
+    .techs__list{
+        margin: 83px auto 90px;
+    }
+    .techs__description{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .techs-page{
+        max-width: 284px;
+        padding-top: 70px;
+    }
+    .techs__header{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .techs__header::after{
+        margin-top: 28px;
+    }
+    .techs__block{
+        margin-top: 60px;
+    }
+    .techs__block-header{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .techs__block-text{
+        width: 292px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .techs__list{
+        margin: 50px auto 70px;
+        display: grid;
+        grid-template-columns: 84px 84px;
+    }
+    .techs__item{
+        width: 84px;
+        height: 57px;
+    }
+}

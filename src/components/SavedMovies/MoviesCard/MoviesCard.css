@@ -1,0 +1,44 @@
+.card__image{
+    max-width: 270px;
+    height: 151px;
+}
+
+.card__inf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    min-height: 27px;
+}
+
+.card__title{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.card__delete{
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+}
+
+.card:hover .card__delete{
+    display: block;
+}
+
+.card__duration{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #a0a0a0;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #E8E8E8;
+    padding-top: 6px;
+}
