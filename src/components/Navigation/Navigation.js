@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import account from "../../images/account.svg"
 
 function Navigation({ isLogged, isBurgerOpened, handleClose }) {
   return (
@@ -22,7 +23,7 @@ function Navigation({ isLogged, isBurgerOpened, handleClose }) {
                   className={({ isActive }) =>
                     isActive
                       ? 'link navigation__list-item navigation__list-item_active'
-                      : 'link navigation__list-item'
+                      : 'link navigation__list-item link navigation__list-item-main'
                   }
                 >
                   Главная
@@ -57,6 +58,7 @@ function Navigation({ isLogged, isBurgerOpened, handleClose }) {
           <ul className="navigation__profile">
             <NavLink className="link navigation__profile-link" to="/profile">
               Аккаунт
+              <button className='profile-link__button'><img className='profile-link__image' alt='Little human' src={account}/></button>
             </NavLink>
           </ul>
         </div>

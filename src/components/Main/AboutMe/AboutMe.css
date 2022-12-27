@@ -57,8 +57,10 @@
 }
 
 .resume__info-pic{
+    background-image: url("../../../images/student.png");
     width: 270px;
     height: 327px;
+    border-radius: 10px;
 }
 
 .resume__info-link{
@@ -119,7 +121,7 @@
     }
     .resume__info-pic{
         max-width: 255px;
-        min-height: 307px;
+        height: 307px;
     }
     .resume__info-head{
         max-width: 348px;
@@ -171,7 +173,6 @@
     }
     .resume__info-pic{
         max-width: 292px;
-        min-height: 352px;
     }
     .resume__info-block{
         margin-top: 40px;

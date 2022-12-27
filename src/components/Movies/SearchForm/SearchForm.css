@@ -11,6 +11,7 @@
 
 .searchform-inp{
     display: flex;
+    width: 100%;
     margin-top: 80px;
     margin-bottom: 31px;
     justify-content: space-between;
@@ -19,7 +20,7 @@
 }
 
 .searchform-inp__input{
-    width: 1060px;
+    width: 92%;
     height: 48px;
     background: #F9F9F9;
     border-radius: 4px;
@@ -27,6 +28,7 @@
 }
 
 .searchform-inp__button{
+    border: 0;
     width: 70px;
     height: 44px;
     background-color: #000;
@@ -35,7 +37,13 @@
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 3px;
+    transition: opacity .3s ease;
+}
+
+.searchform-inp__button:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 input[type="checkbox"].ios8-switch {

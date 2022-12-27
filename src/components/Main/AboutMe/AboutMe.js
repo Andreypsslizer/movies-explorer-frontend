@@ -1,12 +1,11 @@
 import React from "react";
-import student from "../../../images/student.png"
 
 function AboutMe() {
   return (
     <section className="resume">
         <h3 className="resume__header">Студент</h3>
         <div className="resume__info">
-        <img className="resume__info-pic" alt="my photography" src={student}/>
+        <div className="resume__info-pic"></div>
         <div className="resume__info-block">
           <h1 className="resume__info-head">Andrei Kovzik</h1>
           <p className="resume__info-text">Фронтенд-разработчик, 23 лет</p>
@@ -16,9 +15,9 @@ function AboutMe() {
         </div>
       </div>
       <div className="resume__links">
-        <p className="resume__link">Статичный сайт<span>↗</span></p>
-        <p className="resume__link">Адаптивный сайт<span>↗</span></p>
-        <p className="resume__link">Одностраничное приложение<span>↗</span></p>
+        <a href="https://github.com/Andreypsslizer/how-to-learn" className="resume__link">Статичный сайт<span>↗</span></a>
+        <a href="https://github.com/Andreypsslizer/russian-travel" className="resume__link">Адаптивный сайт<span>↗</span></a>
+        <a href="https://github.com/Andreypsslizer/mesto" className="resume__link">Одностраничное приложение<span>↗</span></a>
       </div>
     </section>
   );

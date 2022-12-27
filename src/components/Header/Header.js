@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.svg";
 import {Route, Routes} from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import Navigation from "../Navigation/Navigation";
 
 
@@ -16,7 +17,12 @@ function Header({ isLogged, onBurgerClick }) {
           path="/movies"
           element={
             <div className="profile__header">
-                <img className="logo" alt="logo" src={logo}/>
+                <NavLink
+                  to="/"
+                  className="profile__header-link"
+                >
+                  <img className="profile__header-logo" alt="logo" src={logo}/>
+                </NavLink>
                 <Navigation isLogged={isLogged} />
                 {isLogged && (
                 <div className="header__burger" onClick={onBurgerClick}>
@@ -32,7 +38,12 @@ function Header({ isLogged, onBurgerClick }) {
           path="/saved-movies"
           element={
             <div className="profile__header">
-                <img className="logo" alt="logo" src={logo}/>
+                <NavLink
+                  to="/"
+                  className="profile__header-link"
+                >
+                  <img className="profile__header-logo" alt="logo" src={logo}/>
+                </NavLink>
                 <Navigation isLogged={isLogged} />
                 {isLogged && (
                 <div className="header__burger" onClick={onBurgerClick}>
@@ -48,7 +59,12 @@ function Header({ isLogged, onBurgerClick }) {
           path="/profile"
           element={
             <div className="profile__header">
-                <img className="logo" alt="logo" src={logo}/>
+                <NavLink
+                  to="/"
+                  className="profile__header-link"
+                >
+                  <img className="profile__header-logo" alt="logo" src={logo}/>
+                </NavLink>
                 <Navigation isLogged={isLogged} />
                 {isLogged && (
                 <div className="header__burger" onClick={onBurgerClick}>
@@ -63,13 +79,27 @@ function Header({ isLogged, onBurgerClick }) {
         <Route
           path="/sign-in"
           element={
-            <div className="signin__header"><img className="logo" alt="logo" src={logo}/></div>
+            <div className="signin__header">
+              <NavLink
+                to="/"
+                className="profile__header-link"
+              >
+                <img className="profile__header-logo" alt="logo" src={logo}/>
+              </NavLink>
+            </div>
           }
         ></Route>
         <Route
           path="/sign-up"
           element={
-            <div className="signin__header"><img className="logo" alt="logo" src={logo}/></div>
+            <div className="signin__header">
+              <NavLink
+                to="/"
+                className="profile__header-link"
+              >
+                <img className="profile__header-logo" alt="logo" src={logo}/>
+              </NavLink>
+            </div>
           }
         ></Route>
       </Routes>

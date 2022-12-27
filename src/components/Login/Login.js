@@ -17,6 +17,7 @@ function Login() {
                 minLength="2" 
                 maxLength="40" 
                 required/>
+                <span className="form__error login-input-error"></span>
               <label className="login__label">Пароль</label>
                 <input 
                 id="password-input" 
@@ -27,6 +28,7 @@ function Login() {
                 minLength="2" 
                 maxLength="200" 
                 required/>
+                <span className="form__error password-input-error"></span>
               <button className="login__form-submit" type="submit">Войти</button>
             </form>
             <div className="register__hint">

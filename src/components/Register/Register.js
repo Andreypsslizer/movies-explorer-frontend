@@ -15,7 +15,9 @@ function Register() {
                 type="name" name="name" 
                 placeholder="Vitalii"
                 minLength="2" 
-                maxLength="40"/>
+                maxLength="40"
+                required/>
+                <span className="form__error login-input-error"></span>
               <label className="login__label">E-mail</label>
                 <input 
                 id="email-input" 
@@ -25,6 +27,7 @@ function Register() {
                 minLength="2" 
                 maxLength="40" 
                 required/>
+                <span className="form__error email-input-error"></span>
               <label className="login__label">Пароль</label>
                 <input 
                 id="password-input" 
@@ -35,6 +38,7 @@ function Register() {
                 minLength="2" 
                 maxLength="200" 
                 required/>
+                <span className="form__error password-input-error"></span>
               <button className="login__form-submit" type="submit">Зарегестрироваться</button>
             </form>
             <div className="register__hint">

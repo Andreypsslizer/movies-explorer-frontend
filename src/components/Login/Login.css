@@ -40,7 +40,16 @@
     border-bottom: 2px solid #000;
 }
 
+.form__error{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FF3055;
+    margin-top: 10px;
+}
+
 .login__form-submit{
+    border: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -49,6 +58,12 @@
     height: 45px;
     border-radius: 3px;
     margin-top: 150px;
+    transition: opacity .3s ease;
+}
+
+.login__form-submit:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .register__hint{

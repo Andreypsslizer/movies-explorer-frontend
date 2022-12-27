@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
 @import url(./components/Main/Promo/Promo.css);
