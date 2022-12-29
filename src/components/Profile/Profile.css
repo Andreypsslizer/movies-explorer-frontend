@@ -1,0 +1,113 @@
+.profile{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__hello{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    margin-top: 74px;
+    margin-bottom: 123px;
+}
+
+.profile__form{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    gap: 16px;
+}
+
+.form__input{
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.form__input:last-child{
+    border: none;
+}
+
+.profile__input{
+    border: none;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.profile__input::placeholder{
+    text-align: end;
+}
+
+.profile__form-submit{
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    margin-top: 220px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.profile__exit{
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: transparent;
+    color: #FF4062;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .profile__hello{
+        margin-top: 236px;
+        margin-bottom: 96px;
+    }
+    .profile__label{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000;
+    }
+    .email__label{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000;
+    }
+    .profile__form-submit{
+        margin-top: 210px;
+    }
+    .profile__exit{
+        margin-bottom: 269px;
+    }
+}
+@media screen and (max-width: 319px) {
+    .profile__hello{
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+    .profile__form{
+        width: 260px;
+    }
+    .form__input{
+        width: 260px;
+    }
+    .profile__form-submit{
+        margin-top: 379px;
+    }
+    .profile__exit{
+        margin-bottom: 40px;
+    }
+}

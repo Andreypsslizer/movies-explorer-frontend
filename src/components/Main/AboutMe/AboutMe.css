@@ -1,0 +1,210 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.resume__header{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+.resume__header::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #000;
+    margin-top: 23px;
+}
+
+.resume__info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 66px;
+}
+
+.resume__info-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.resume__info-head{
+  max-width: 600px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.resume__info-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+}
+
+.resume__info-pic{
+    background-image: url("../../../images/student.png");
+    width: 270px;
+    height: 327px;
+    border-radius: 10px;
+}
+
+.resume__info-link{
+    margin-top: 99px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #000;
+}
+
+.resume__info-biography{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
+    position: relative;
+}
+
+.resume__info-biography::after{
+    content: 'Портфолио';
+    display: block;
+    position: absolute;
+    top: 305px;
+    color: #A0A0A0;
+}
+
+.resume__links{
+    margin-top: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding-bottom: 125px;
+}
+
+.resume__link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: #e8e8e8 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__link:last-child{
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .resume{
+        max-width: 92%;
+    }
+    .resume__info-pic{
+        max-width: 255px;
+        height: 307px;
+    }
+    .resume__info-head{
+        max-width: 348px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .resume__info-text{
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+    .resume__info-biography{
+        max-width: 364px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 20px;
+    }
+    .resume__info-biography::after{
+        top: 303px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .resume__info-link{
+        margin-top: 87px;
+    }
+    .resume__links{
+        margin-top: 160px;
+    }
+    .resume__link{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 319px) {
+    .resume__header{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .resume__header::after{
+        margin-top: 28px;
+    }
+    .resume__info{
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume__info-pic{
+        max-width: 292px;
+    }
+    .resume__info-block{
+        margin-top: 40px;
+    }
+    .resume__info-head{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .resume__info-text{
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+    .resume__info-biography{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .resume__info-biography::after{
+        font-size: 14px;
+        line-height: 20px;
+        top: 239px;
+    }
+    .resume__info-link{
+        margin-top: 40px;
+    }
+    .resume__links{
+        margin-top: 130px;
+        padding-bottom: 70px;
+    }
+    .resume__link{
+        font-size: 18px;
+        line-height: 28px;
+        padding-bottom: 19px;
+    }
+}

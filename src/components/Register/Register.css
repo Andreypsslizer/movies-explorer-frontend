@@ -1,0 +1,121 @@
+.register{
+    max-width: 396px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.register__hello{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__label{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A0A0A0;
+    margin-top: 24px;
+}
+
+.login__input{
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 10px;
+    outline: 0;
+}
+
+.login__input:focus{
+    border-bottom: 2px solid #000;
+}
+
+.form__error{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FF3055;
+    margin-top: 10px;
+}
+
+.login__form-submit{
+    border: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-color: #000;
+    height: 45px;
+    border-radius: 3px;
+    margin-top: 150px;
+    transition: opacity .3s ease;
+}
+
+.login__form-submit:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.register__hint{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 70px;
+}
+
+.register__yet{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A0A0A0;
+    margin: 0;
+    padding: 0;
+}
+
+.log-in{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+    .register__hint{
+        margin-bottom: 232px;
+    }
+}
+@media screen and (max-width: 319px) {
+    .register{
+        max-width: 260px;
+    }
+    .register__hello{
+        text-align: center;
+    }
+    .login__form-submit{
+        margin-top: 240px;
+    }
+    .register__hint{
+        margin-top: 14px;
+        margin-bottom: 30px;
+    }
+    .register__yet{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .log-in{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
