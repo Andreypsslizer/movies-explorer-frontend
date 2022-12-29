@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 767px) {
     .techs-page{
-        max-width: 668px;
+        max-width: 92%;
         padding-top: 90px;
     }
     .techs__block{
@@ -100,7 +100,6 @@
 
 @media screen and (max-width: 319px) {
     .techs-page{
-        max-width: 284px;
         padding-top: 70px;
     }
     .techs__header{

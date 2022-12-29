@@ -69,6 +69,7 @@
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
+    color: #000;
 }
 
 .resume__info-biography{
@@ -100,9 +101,11 @@
 }
 
 .resume__link{
+    text-decoration: none;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
+    color: #000;
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
@@ -117,7 +120,7 @@
 
 @media screen and (max-width: 767px) {
     .resume{
-        max-width: 668px;
+        max-width: 92%;
     }
     .resume__info-pic{
         max-width: 255px;
@@ -156,9 +159,6 @@
     }
 }
 @media screen and (max-width: 319px) {
-    .resume{
-        max-width: 284px;
-    }
     .resume__header{
         font-size: 18px;
         line-height: 22px;

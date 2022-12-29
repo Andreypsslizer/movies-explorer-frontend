@@ -1,5 +1,5 @@
 .searchform{
-    max-width: 1140px;
+    max-width: 92%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -95,10 +95,10 @@ input[type="checkbox"].ios8-switch:checked + label:before {
 
 @media screen and (max-width: 767px) {
     .searchform-inp__input{
-        max-width: 628px;
+        max-width: 81%;
     }
     .searchform{
-        max-width: 708px;
+        max-width: 92%;
     }
 }
 @media screen and (max-width: 319px) {

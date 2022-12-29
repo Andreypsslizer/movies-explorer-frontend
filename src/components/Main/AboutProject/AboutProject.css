@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 767px) {
     .about{
-        max-width: 668px;
+        max-width: 92%;
         margin: 90px auto 0;
     }
     .about__block{
@@ -120,7 +120,6 @@
   }
   @media screen and (max-width: 319px) {
     .about{
-        max-width: 284px;
         margin-top: 70px;
     }
     .about__header{

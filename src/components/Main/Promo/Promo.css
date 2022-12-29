@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 767px) {
   .promo__header{
-    max-width: 668px;
+    max-width: 92%;
   }
   .promo__info{
     flex-direction: column;

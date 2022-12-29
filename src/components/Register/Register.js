@@ -43,7 +43,7 @@ function Register() {
             </form>
             <div className="register__hint">
                 <p className="register__yet">Уже зарегистрированы?</p>
-                <a className="log-in" href="http://localhost:3000/sign-in">Войти</a>
+                <a className="log-in" href="/sign-in">Войти</a>
             </div>
     </section>
   );
